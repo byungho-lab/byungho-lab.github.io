@@ -3,16 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - My Portfolio</title>
+    <title>Home - Zijun Cui</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; }
-        header { background: #333; color: white; padding: 20px; font-size: 24px; }
-        nav { background: #444; padding: 10px; }
-        nav a { color: white; text-decoration: none; padding: 10px 20px; display: inline-block; }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background: #333; color: white; padding: 20px; font-size: 24px; text-align: center; }
+        nav { background: #444; padding: 10px; text-align: center; }
+        nav a { color: white; text-decoration: none; padding: 10px 20px; display: inline-block; font-size: 18px; }
         nav a:hover { background: #555; }
-        section { padding: 20px; max-width: 800px; margin: auto; }
-        .project { border: 1px solid #ddd; padding: 15px; margin: 10px 0; }
-        footer { background: #333; color: white; padding: 10px; margin-top: 20px; }
+
+        .container { 
+            display: flex; 
+            align-items: flex-start; 
+            max-width: 900px; 
+            margin: 40px auto; 
+            padding: 20px; 
+        }
+
+        .profile-section {
+            width: 250px;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .profile-img { 
+            width: 150px; 
+            border-radius: 50%; 
+            display: block; 
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            text-align: right;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .contact-info a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover { text-decoration: underline; }
+
+        .content { 
+            flex: 1; 
+            text-align: left; 
+            padding-left: 30px;
+        }
+
+        .highlight { font-weight: bold; color: green; }
+
+        .footer { 
+            background: #333; 
+            color: white; 
+            padding: 10px; 
+            text-align: center; 
+            margin-top: 20px; 
+        }
     </style>
 </head>
 <body>
@@ -24,10 +75,58 @@
         <a href="cv.html">CV</a>
         <a href="teaching.html">Teaching</a>
     </nav>
-    <section>
-        <h2>Welcome</h2>
-        <p>Welcome to my portfolio website! Navigate through the tabs above to learn more about me.</p>
-    </section>
-    <footer>&copy; 2025 My Portfolio</footer>
+
+    <div class="container">
+        <!-- Left Side: Profile Image, Name, and Contact Info -->
+        <div class="profile-section">
+            <img src="ByunghoLee_profile.jpeg" alt="Profile Picture" class="profile-img">
+            <h2>Byungho Lee</h2>
+            <div class="contact-info">
+                <p>📧 <a href="mailto:byungho@msu.edu">byungho@msu.edu</a></p>
+                <p>🔗 <a href="https://www.linkedin.com/in/byungho-lee-460897108/">LinkedIn</a></p>
+                <p>🐙 <a href="https://github.com/byungho-lab/byungho">GitHub</a></p>
+                <p>📚 <a href="https://scholar.google.com/citations?user=YJUcrAkAAAAJ&hl=ko">Google Scholar</a></p>
+            </div>
+        </div>
+
+        <!-- Right Side: Biography, Research Interests, and Education -->
+        <div class="content">
+            <p>
+                I am a Ph.D. student in the 
+                <a href="#">Department of Computer Science and Engineering at Michigan State University</a>,
+                starting in Fall 2022. Prior to this, I was a senior research aide at cancer center for
+                Stony Brook Medicine.
+            </p>
+
+            <p class="highlight">
+                I am open to collaborative work in computational biology. Contact me if you are interested. 
+            </p>
+    
+            <p class="highlight">
+                I also provide statistical analysis for both science and social science.
+            </p>
+
+            <h3>Research Interests</h3>
+            <ul>
+                <li>Phylogenomics and Phylogenetics</li>
+                <li>Comparative Genetics</li>
+                <li>Population Genetics</li>
+            </ul>
+
+            <h3>Education</h3>
+            <ul>
+                <li>🎓 Ph.D. in progress in Computer Science and Engineering, Michigan State University</li>
+                <li>🎓 M.S. in Applied Mathematics and Statistics, Stony Brook University</li>
+                <li>🎓 B.S. in Applied Mathematics and Statistics, Stony Brook University</li>
+            </ul>
+
+            <h3>News</h3>
+            <p>Latest updates and research highlights go here.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        &copy; 2025 Zijun Cui. Powered by Jekyll with al-folio theme. Hosted by GitHub Pages.
+    </footer>
 </body>
 </html>
