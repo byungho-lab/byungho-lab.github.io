@@ -3,24 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications</title>
+    <title>Publications - Byungho Lee</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; }
-        /* header { background: #333; color: white; padding: 20px; font-size: 24px; } */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            text-align: center;
+        }
 
-        nav { background: #444; padding: 10px; display: flex; justify-content: center; /* Centers the nav links */ align-items: center; position: relative; /* Allows absolute positioning inside */}
-        .nav-center { display: flex; gap: 20px; /* Adds spacing between links */}
-        .nav-center a { color: white; text-decoration: none; font-size: 18px; padding: 10px;}
-        .nav-center a:hover { background: #555;}
-        .nav-right { position: absolute; right: 20px; /* Aligns name to the right */ color: white; font-size: 18px; font-weight: bold;}
+        nav {
+            background: #444;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
 
-        
-        section { padding: 20px; max-width: 800px; margin: auto; }
-        footer { background: #333; color: white; padding: 10px; margin-top: 20px; }
+        .nav-center {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-center a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        .nav-center a:hover {
+            background: #555;
+        }
+
+        .nav-right {
+            position: absolute;
+            right: 20px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        .publication {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .publication:last-child {
+            border-bottom: none;
+        }
+
+        .publication-title {
+            font-weight: bold;
+            color: #222;
+        }
+
+        .publication-authors, .publication-journal {
+            font-size: 14px;
+            color: #666;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
-    <!-- <header>My Portfolio</header> -->
     <nav>
         <div class="nav-center">
             <a href="index.html">About</a>
@@ -31,13 +99,44 @@
         <div class="nav-right">Byungho Lee</div>
     </nav>
 
-    <section>
+    <div class="container">
         <h2>Research Publications</h2>
-        <ul>
-            <li><strong>Title 1:</strong> Description of the publication.</li>
-            <li><strong>Title 2:</strong> Another research paper.</li>
-        </ul>
-    </section>
-    <footer>&copy; 2025 My Portfolio</footer>
+        <div class="publication">
+            <p class="publication-title">A Statistical Optimization Technique to Inform Statistical Resampling Assessments of Phylogenetic Reconstruction Reliability</p>
+            <p class="publication-authors">Author(s): Byungho Lee, Kevin J. Liu</p>
+            <p class="publication-journal">Published in: IEEE BIBM, 2024</p>
+        </div>
+        <!-- <div class="publication">
+            <p class="publication-title">Title of Paper 2</p>
+            <p class="publication-authors">Author(s): X. Scholar, Y. Innovator, B. Lee</p>
+            <p class="publication-journal">Published in: Bioinformatics Advances, 2023</p>
+        </div> -->
+    </div>
+
+    <div class="container">
+        <h2>Publications in Statistical Collaboration</h2>
+        <div class="publication">
+            <p class="publication-title">MiSurv: an integrative web cloud platform for user-friendly microbiome data analysis with survival responses</p>
+            <p class="publication-authors">Author(s): Won Gu, Hyunwook Koh, Hyojung Jang, Byungho Lee, Byungkon Kang</p>
+            <p class="publication-journal">Published in: Microbiology Spectrum, 2023</p>
+        </div>
+        <div class="publication">
+            <p class="publication-title">Preoperative mental illness and postoperative atrial fibrillation in cardiac surgery patients: Identifying a vulnerable population</p>
+            <p class="publication-authors">Author(s): Natalie K Kolba, Byungho Lee, Henry J Tannous, Thomas V Bilfinger, Annie L Shroyer</p>
+            <p class="publication-journal">Published in: Journal of Clinical and Translational Science, 2023</p>
+        </div>
+        <!-- <div class="publication">
+            <p class="publication-title">Title of Paper 3</p>
+            <p class="publication-authors">Author(s): D. Analyst, B. Lee, E. Researcher</p>
+            <p class="publication-journal">Published in: Statistical Applications in Genetics, 2024</p>
+        </div>
+        <div class="publication">
+            <p class="publication-title">Title of Paper 4</p>
+            <p class="publication-authors">Author(s): F. Data Scientist, G. Biologist, B. Lee</p>
+            <p class="publication-journal">Published in: Advances in Statistical Genomics, 2023</p>
+        </div> -->
+    </div>
+
+    <footer>&copy; 2025 Byungho Lee. Powered by Jekyll. Hosted by GitHub Pages.</footer>
 </body>
 </html>

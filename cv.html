@@ -3,24 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
+    <title>CV - Byungho Lee</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; }
-        /* header { background: #333; color: white; padding: 20px; font-size: 24px; } */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            text-align: center;
+        }
 
-        nav { background: #444; padding: 10px; display: flex; justify-content: center; /* Centers the nav links */ align-items: center; position: relative; /* Allows absolute positioning inside */}
-        .nav-center { display: flex; gap: 20px; /* Adds spacing between links */}
-        .nav-center a { color: white; text-decoration: none; font-size: 18px; padding: 10px;}
-        .nav-center a:hover { background: #555;}
-        .nav-right { position: absolute; right: 20px; /* Aligns name to the right */ color: white; font-size: 18px; font-weight: bold;}
+        nav {
+            background: #444;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
 
-        
-        section { padding: 20px; max-width: 800px; margin: auto; }
-        footer { background: #333; color: white; padding: 10px; margin-top: 20px; }
+        .nav-center {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-center a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        .nav-center a:hover {
+            background: #555;
+        }
+
+        .nav-right {
+            position: absolute;
+            right: 20px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .cv-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            max-width: 900px;
+            margin: 20px auto 0 auto;
+        }
+
+        .cv-header h1 {
+            margin: 0;
+            font-size: 32px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .cv-header a img {
+            width: 40px;
+            height: auto;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .cv-section {
+            padding: 5px 0;
+            font-size: 15px;
+
+        }
+
+        .cv-item {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .cv-item:last-child {
+            border-bottom: none;
+        }
+
+        .cv-year {
+            flex-shrink: 0;
+            min-width: 100px;
+            /* background: #4CAF50; */
+            background: #2E7D32;
+            color: white;
+            padding: 5px 8px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .cv-details {
+            padding-left: 20px;
+            flex-grow: 1;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
-    <!-- <header>My Portfolio</header> -->
     <nav>
         <div class="nav-center">
             <a href="index.html">About</a>
@@ -31,10 +136,58 @@
         <div class="nav-right">Byungho Lee</div>
     </nav>
 
-    <section>
-        <h2>Curriculum Vitae</h2>
-        <p>Download my CV: <a href="cv.pdf" target="_blank">Click here</a></p>
-    </section>
-    <footer>&copy; 2025 My Portfolio</footer>
+    <div class="cv-header">
+        <h1>CV</h1>
+        <a href="cv.pdf" target="_blank">
+            <img src="pdf-icon.png" alt="Download CV">
+        </a>
+    </div>
+
+    <div class="container">
+        <h2>General Information</h2>
+        <div class="cv-section">
+            <p><strong>Full Name:</strong> Byungho Lee</p>
+            <p><strong>Languages:</strong> English, Korean</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Education</h2>
+        <div class="cv-section">
+            <div class="cv-item"><span class="cv-year">2022 - Present</span><div class="cv-details"><span class="cv-title">Ph.D. Computer Science and Engineering</span>, Michigan State University</div></div>
+            <div class="cv-item"><span class="cv-year">2022 - Present</span><div class="cv-details"><span class="cv-title">Ph.D. Ecology, Evolution, and Behavior Program</span>, Michigan State University</div></div>
+            <div class="cv-item"><span class="cv-year">2022</span><div class="cv-details"><span class="cv-title">M.S. Applied Mathematics and Statistics</span>, Stony Brook University</div></div>
+            <div class="cv-item"><span class="cv-year">2020</span><div class="cv-details"><span class="cv-title">B.S. Applied Mathematics and Statistics</span>, Stony Brook University</div></div>
+            <!-- <div class="cv-item"><span class="cv-year">2014</span><div class="cv-details"><span class="cv-title">B.S. Technological Systems Management (Transferred)</span>, Stony Brook University</div></div> -->
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Experience</h2>
+        <div class="cv-section">
+            <!-- <div class="cv-item"><span class="cv-year">2024 - Present</span><div class="cv-details"><span class="cv-title">Assistant Professor</span>, Michigan State University</div></div> -->
+            <div class="cv-item"><span class="cv-year">2022 - Present</span><div class="cv-details"><span class="cv-title">Research Assistant</span>, Michigan State University</div></div>
+            <div class="cv-item"><span class="cv-year">2022</span><div class="cv-details"><span class="cv-title">Senior Research Aide</span>, Cancer Center, Stony Brook Medicine</div></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Honors and Awards</h2>
+        <div class="cv-section">
+            <!-- <div class="cv-item"><span class="cv-year">2023</span><div class="cv-details">Prize, Institute</div></div> -->
+            <div class="cv-item"><span class="cv-year">2023</span><div class="cv-details">EEB Graduate Summer Fellowship, Michigan State University</div></div>
+            <div class="cv-item"><span class="cv-year">2022</span><div class="cv-details">EEB Graduate Recruitment Fellowship, Michigan State University</div></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Service</h2>
+        <div class="cv-section">
+            <p><strong>Reviewer:</strong> IEEE BIBM 2024, ACM BCB 2023, ISBRA 2023</p>
+            <!-- <p><strong>Conference Volunteer:</strong> KDD 2023</p> -->
+        </div>
+    </div>
+
+    <footer>&copy; 2025 Byungho Lee. Powered by Jekyll. Hosted by GitHub Pages.</footer>
 </body>
 </html>
