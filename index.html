@@ -7,10 +7,45 @@
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
         header { background: #333; color: white; padding: 20px; font-size: 24px; text-align: center; }
-        nav { background: #444; padding: 10px; text-align: center; }
+        /* nav { background: #444; padding: 10px; text-align: center; }
         nav a { color: white; text-decoration: none; padding: 10px 20px; display: inline-block; font-size: 18px; }
-        nav a:hover { background: #555; }
+        nav a:hover { background: #555; } */
 
+
+        nav {
+    background: #444;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Centers the nav links */
+    align-items: center;
+    position: relative; /* Allows absolute positioning inside */
+}
+
+.nav-center {
+    display: flex;
+    gap: 20px; /* Adds spacing between links */
+}
+
+.nav-center a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.nav-center a:hover {
+    background: #555;
+}
+
+.nav-right {
+    position: absolute;
+    right: 20px; /* Aligns name to the right */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+        
         .container { 
             display: flex; 
             align-items: flex-start; 
@@ -67,14 +102,27 @@
     </style>
 </head>
 <body>
-    <!-- <header>My Portfolio</header> -->
-    <nav>
+    <!-- <header>Byungho Lee</header> -->
+    <!-- <nav>
         <a href="index.html">About</a>
-        <!-- <a href="about.html">About</a> -->
+        <a href="about.html">About</a>
         <a href="publications.html">Publications</a>
         <a href="cv.html">CV</a>
         <a href="teaching.html">Teaching</a>
+    </nav> -->
+
+    <nav>
+        <div class="nav-center">
+            <a href="index.html">About</a>
+            <a href="publications.html">Publications</a>
+            <a href="cv.html">CV</a>
+            <a href="teaching.html">Teaching</a>
+        </div>
+        <div class="nav-right">Byungho Lee</div>
     </nav>
+
+
+
 
     <div class="container">
         <!-- Left Side: Profile Image, Name, and Contact Info -->
